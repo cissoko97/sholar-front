@@ -1,0 +1,132 @@
+.app-toolbar{
+    background: black;
+    color:white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.toolbar-action{
+  height: 100%;
+  display: flex;
+}
+
+.toolbar-button{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  padding:0;
+  margin: 0;
+}
+.toolbar-button:hover{
+  background: #2a282b;
+}
+
+.toolbar-avatar{
+    position: relative;
+}
+
+.toolbar-avatar-img{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+
+.search-bar-icon{
+  width: 30px;
+  text-align: center;
+  line-height: 50%;
+  transition: left .3s;
+}
+.toolbar-brand{
+    padding: 0 15px;
+    font-size: 25px;
+}
+
+.search-bar {
+  display: flex;
+  height: 25px;
+  background: gray;
+  align-items: center;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 300px;
+  border: 1px solid transparent;
+
+  position: relative;
+
+  transition: border-color .3s;
+}
+
+.search-bar input{
+  border: none;
+  height: 100%;
+  background: transparent;
+  color: #464444;
+
+  width: 100%;
+  padding: 0 10px;
+}
+
+.search-bar input:focus{
+  backdrop-filter: brightness(50%);
+}
+
+.left-panel {
+  width: 300px;
+  max-width: 100%;
+  background: #161514;
+
+  position: fixed;
+  top: 50px;
+  right: -300px;
+  bottom: 0;
+
+  transition: right .3s;
+}
+
+.left-panel-visible {
+  right: 0;
+}
+
+.panel-title {
+  color: #f3f2f1;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 200;
+  user-select: none;
+}
+
+.panel-title .panel-title-text {
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+.panel-close-button {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.panel-close-button:hover{
+  backdrop-filter: brightness(2);
+  cursor: pointer;
+}
