@@ -1,0 +1,16 @@
+.main-container {
+    background: #979593;
+    position: fixed;
+    left: 250px;
+    top: 50px;
+    right:0;
+    bottom: 0;
+  
+    overflow: auto;
+  
+    transition: left .2s;
+  }
+
+  .main-container.icon-only {
+    left: 45px;
+  }

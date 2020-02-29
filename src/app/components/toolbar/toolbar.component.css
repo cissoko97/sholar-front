@@ -99,6 +99,8 @@
 
 .left-panel-visible {
   right: 0;
+  z-index: 1;
+  transition: right .3s
 }
 
 .panel-title {

@@ -1,10 +1,12 @@
-<!-- <span class="toolbar-button" id="notification-panel-button">
-  <i class="ms-Icon ms-Icon--Zoom"></i>
-  <i class="ms-Icon ms-Icon--People"></i>
-  <span class="ringer-badge">10</span>
-</span> -->
+<!-- import toolbar component on app-component -->
 <app-toolbar>
-
 </app-toolbar>
-<p>{{title}}</p>
-<router-outlet></router-outlet>
+<!-- import sidenav component on app-component -->
+<app-sidenav>
+</app-sidenav>
+<!-- <app-somecmp>
+</app-somecmp> -->
+<div #main class="main-container">
+  <p>{{title}}</p>
+  <router-outlet></router-outlet>
+</div>
